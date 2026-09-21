@@ -1,0 +1,5 @@
+ID,Type,SKU,Name,Categories,Attribute 1 name,Attribute 1 value(s)
+101,simple,SHIRT-B,Blue shirt,Clothing > Shirts,Color,Blue
+102,simple,SHIRT-B2,Blue shirt,clothing > shirts,Color,Blue
+103,simple,SHIRT-R,Blue shirt,Clothing > Shirts,Color,Red
+104,simple,CAP-1,Cotton cap,,Color,Black

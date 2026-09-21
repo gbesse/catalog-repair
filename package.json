@@ -1,0 +1,41 @@
+{
+  "name": "@gbesse/catalog-repair",
+  "description": "Review WooCommerce catalog anomalies with MatchGraph, ExceptionOS and Jev.",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "src",
+    "web",
+    "examples",
+    "scripts",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbesse/catalog-repair.git"
+  },
+  "dependencies": {
+    "@gbesse/decision-workbench": "git+https://github.com/gbesse/decision-workbench.git#161f55c637cbcb666b67449b0bbbbee52c393684",
+    "@gbesse/decisionpacks": "git+https://github.com/gbesse/decisionpacks.git#3c90b6e667c16653b9a6ae00b376df9bddbd8461",
+    "@gbesse/exceptionos": "git+https://github.com/gbesse/exceptionos.git#2a5c3d31e5aa85449fbd0fbf92b7b9de5ed2728b",
+    "@gbesse/matchgraph": "git+https://github.com/gbesse/matchgraph.git#decdfb6711dc5af5516aaa04c24beecd7565b1d5"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "start": "node src/server.mjs",
+    "demo": "node src/server.mjs --demo"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
