@@ -28,3 +28,5 @@ The graph's SKU is the internal WooCommerce product ID; `item`/pack size 1 descr
 `npm test` exercises source identity rejection, provenance preservation, human-gated category exports, actual MatchGraph/ExceptionOS handoff, advisory-only inference, and a real Chromium review/download journey. `npm run check` checks syntax. No build or real WooCommerce write occurs. This is CSV interoperability based on the [official WooCommerce importer documentation](https://woocommerce.com/document/product-csv-importer-exporter/), not a tested WooCommerce host plugin.
 
 Data and review history persist in `.local/catalog.sqlite`. Reviewer names are declarative in this local workspace. Export the complete review dossier for audit and retain the source CSV. Corrections do not overwrite source evidence. No admin email reporter is configured: unexpected errors are visible in the API, local error events and server stderr.
+
+A real Jev smoke verification is recorded in [docs/live-verification.json](docs/live-verification.json). It used only synthetic examples and made no store/workflow changes.
