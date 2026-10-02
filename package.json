@@ -1,7 +1,7 @@
 {
   "name": "@gbesse/catalog-repair",
   "description": "Review WooCommerce catalog anomalies with MatchGraph, ExceptionOS and Jev.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -33,7 +33,8 @@
     "test": "node --test tests/*.test.mjs",
     "check": "node scripts/check.mjs",
     "start": "node src/server.mjs",
-    "demo": "node src/server.mjs --demo"
+    "demo": "node src/server.mjs --demo",
+    "demo:review": "node examples/review-cli.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0"
